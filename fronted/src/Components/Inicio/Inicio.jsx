@@ -12,8 +12,8 @@ export function Inicio() {
 
       const onSubmit = async(data) =>{
         try{
-            const response = await axios.post('http://localhost:3001/traductor/tranductor',{data:data});
-            settexto(response.data);;
+            const response = await axios.post('https://proyecto-sumary-ia.herokuapp.com/traductor/tranductor',{data:data});
+            settexto(response.data);
         }catch(err){
                 alert('An error occurred')
         }
@@ -47,12 +47,12 @@ export function Inicio() {
                                     </div>
                                     <div className="col">
                                     <center>
-                                        <h2>Resumen traducido</h2>
+                                        <h2>Resumen traducidoo</h2>
                                     </center>
                                     <textarea style={{width:'90%'}} value = {texto[0].traduc} readOnly>
                                     </textarea>
                                     </div>
-                    </div>
+                            </div>
                       </form>
                   </div>
               </div>
