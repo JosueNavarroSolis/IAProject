@@ -8,7 +8,7 @@ export function Inicio() {
     
     const {register,handleSubmit} = useForm();
     let navigate = useNavigate();
-    const [texto, settexto] = useState([]);
+    const [texto, settexto] = useState([{texto:'',traduc:''}]);
 
       const onSubmit = async(data) =>{
         try{
@@ -61,3 +61,5 @@ export function Inicio() {
       </Fragment>
     )
   }
+
+  
